@@ -57,7 +57,7 @@ module.exports = {
                 space:  process.env.CTF_SPACE_ID,
                 accessToken: process.env.CTF_CD_ACCESS_TOKEN
             });
-
+            console.log(client);
             return client.getEntries({
                 content_type: 'blogPost'
             }).then((response) => {

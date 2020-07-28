@@ -12,7 +12,7 @@ export const mutations = {
 
 export const actions = {
     async getPosts({commit}) {
-        console.log(client);
+        console.log("posts");
         const response = await client.getEntries({
             content_type: 'blogPost'
         });
