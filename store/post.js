@@ -1,3 +1,4 @@
+require('dotenv').config();
 // import client from '../plugins/contentful';
 const contentful = require('contentful');
 
