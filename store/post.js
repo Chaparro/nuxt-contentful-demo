@@ -1,4 +1,5 @@
-import client from '../plugins/contentful';
+// import client from '../plugins/contentful';
+const contentful = require('contentful');
 
 export const state = () => ({
     currentPost: {},
@@ -16,7 +17,10 @@ export const mutations = {
 
 export const actions = {
     async getPostBySlug({commit}, slug) {
-        console.log(client);
+        const client = contentful.createClient({
+            space:  process.env.CTF_SPACE_ID,
+            accessToken: process.env.CTF_CD_ACCESS_TOKEN
+        });
         commit('setLoading', true);
         const response = await client.getEntries({
             content_type: 'blogPost',
