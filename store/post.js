@@ -18,6 +18,10 @@ export const mutations = {
 
 export const actions = {
     async getPostBySlug({commit}, slug) {
+        console.log('post');
+        console.log({commit});
+        console.log(slug);
+        console.log(process.env);
         const client = contentful.createClient({
             space:  process.env.CTF_SPACE_ID,
             accessToken: process.env.CTF_CD_ACCESS_TOKEN
