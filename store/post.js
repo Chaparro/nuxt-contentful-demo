@@ -1,6 +1,11 @@
 require('dotenv').config();
 // import client from '../plugins/contentful';
 const contentful = require('contentful');
+console.log(process.env);
+const client = contentful.createClient({
+    space:  process.env.CTF_SPACE_ID,
+    accessToken: process.env.CTF_CD_ACCESS_TOKEN
+});
 
 export const state = () => ({
     currentPost: {},
@@ -18,14 +23,7 @@ export const mutations = {
 
 export const actions = {
     async getPostBySlug({commit}, slug) {
-        console.log('post');
-        console.log({commit});
         console.log(slug);
-        console.log(process.env);
-        const client = contentful.createClient({
-            space:  process.env.CTF_SPACE_ID,
-            accessToken: process.env.CTF_CD_ACCESS_TOKEN
-        });
         commit('setLoading', true);
         const response = await client.getEntries({
             content_type: 'blogPost',
