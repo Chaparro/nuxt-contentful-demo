@@ -1,6 +1,6 @@
 <template>
-    <div class="container">
-        <h2>Latest posts</h2>
+    <div class="container content">
+        <h2 class="title">Latest posts</h2>
         <ul>
             <li v-if="posts" v-for="(post, index) in posts" :key="index">
                 <nuxt-link :to="post.fields.slug">{{ post.fields.title }}</nuxt-link>
