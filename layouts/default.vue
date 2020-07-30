@@ -2,7 +2,7 @@
     <div>
         <h1 class="site-title">
             <nuxt-link :to="{ path: '/' }" class="site-title__link">
-                <img src="../assets/drim.png" alt="Drim">
+                <img src="~/assets/drim.png" alt="Drim">
             </nuxt-link>
         </h1>
         <nuxt/>
