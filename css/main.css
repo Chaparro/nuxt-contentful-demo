@@ -22,10 +22,18 @@ body {
     margin-top: 40px;
 }
 .single-post__content {
-    margin-right: 200px;
-    margin-left: 200px;
+    margin-right: 50px;
+    margin-left: 50px;
+    text-align: justify;
 }
 ul {
     list-style-type: none !important;
     margin: 0 !important;
+}
+@media screen and (min-width: 1200px) {
+    .single-post__content{
+        margin-right: 200px;
+        margin-left: 200px;
+        text-align: justify;
+    }
 }
