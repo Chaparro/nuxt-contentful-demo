@@ -24,7 +24,7 @@ body {
 .single-post__content {
     margin-right: 50px;
     margin-left: 50px;
-    text-align: justify;
+    text-align: center;
 }
 ul {
     list-style-type: none !important;
@@ -34,6 +34,6 @@ ul {
     .single-post__content{
         margin-right: 200px;
         margin-left: 200px;
-        text-align: justify;
+        text-align: center;
     }
 }
