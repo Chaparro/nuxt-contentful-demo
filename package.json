@@ -1,8 +1,8 @@
 {
-    "name": "nuxt-demo",
+    "name": "dreamavarium-nuxt-contentful",
     "version": "1.0.0",
-    "description": "Nuxt.js project",
-    "author": "Chris Boakes <chris@chrisboakes.com>",
+    "description": "Nuxt and Contentful Static Site",
+    "author": "DRM",
     "private": true,
     "scripts": {
         "dev": "nuxt",
